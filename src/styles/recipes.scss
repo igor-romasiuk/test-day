@@ -1,0 +1,136 @@
+.recipes-section {
+    padding: 80px 0;
+    background-color: white;
+    
+    .recipes-header {
+        text-align: center;
+        margin-bottom: 60px;
+        
+        h2 {
+            font-size: 36px;
+            color: #676767;
+            margin-bottom: 20px;
+            font-weight: 500;
+            
+            span {
+                color: #F8B830;
+            }
+        }
+        
+        p {
+            color: #676767;
+            line-height: 1.5;
+            margin: 0;
+        }
+    }
+    
+    .recipes-grid {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 30px;
+        margin-bottom: 50px;
+        
+        .recipe-card {
+            background: white;
+            border-radius: 8px;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
+            overflow: hidden;
+            transition: transform 0.3s ease;
+            
+            &:hover {
+                transform: translateY(-5px);
+            }
+            
+            .recipe-image {
+                width: 100%;
+                height: 250px;
+                overflow: hidden;
+                
+                img {
+                    width: 100%;
+                    height: 100%;
+                    object-fit: cover;
+                }
+            }
+            
+            .recipe-info {
+                padding: 20px;
+                position: relative;
+                text-align: center;
+                
+                .content {
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    gap: 10px;
+                }
+                
+                .rating {
+                    color: #F8B830;
+                }
+                
+                h3 {
+                    font-size: 18px;
+                    color: #333;
+                }
+                
+                .time {
+                    display: flex;
+                    align-items: center;
+                    gap: 8px;
+                    color: #676767;
+                    font-size: 14px;
+                }
+                
+                p {
+                    color: #676767;
+                    font-size: 14px;
+                    line-height: 1.5;
+                    max-width: 280px;
+                    margin: 0 auto;
+                }
+                
+                .share-btn {
+                    position: absolute;
+                    top: 20px;
+                    right: 20px;
+                    background: none;
+                    border: none;
+                    cursor: pointer;
+                    color: #676767;
+                    
+                    &:hover {
+                        color: #F8B830;
+                    }
+                }
+            }
+        }
+    }
+    
+    .discover-more {
+        text-align: center;
+        
+        .discover-btn {
+            display: inline-flex;
+            align-items: center;
+            gap: 10px;
+            color: #F8B830;
+            text-decoration: none;
+            font-weight: 500;
+            transition: color 0.3s ease;
+            
+            svg {
+                fill: currentColor;
+                transition: transform 0.3s ease;
+            }
+            
+            &:hover {
+                color: darken(#F8B830, 10%);
+                
+                svg {
+                    transform: translateX(5px);
+                }
+            }
+        }
+    }
+} 

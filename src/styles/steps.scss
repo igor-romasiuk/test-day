@@ -1,0 +1,131 @@
+.steps-section {
+    padding: 80px 0;
+    background: white;
+    overflow: hidden;
+
+    .container {
+        position: relative;
+    }
+
+    .steps-content {
+        position: relative;
+        margin: 0 auto;
+    }
+
+    .steps-header {
+        text-align: center;
+        margin-bottom: 60px;
+
+        .steps-tabs {
+            display: inline-flex;
+            gap: 2px;
+            background: #F4C22F;
+            padding: 4px;
+            border-radius: 4px;
+            color: #fff;
+
+            .step {
+                padding: 12px 40px;
+                background: none;
+                border: none;
+                cursor: pointer;
+                font-weight: 500;
+                color: #fff;
+                transition: all 0.3s ease;
+                font-size: 14px;
+
+                &.active {
+                    color: #fff;
+                    border-radius: 2px;
+                    border-bottom: 2px solid #fff;
+                }
+
+                &:hover:not(.active) {
+                    background: rgba(248, 184, 48, 0.1);
+                }
+            }
+        }
+    }
+
+    .steps-text {
+        background-color: #fff;
+    }
+
+    .steps-images {
+        position: relative;
+        height: 700px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        .left-image {
+            position: absolute;
+            left: 0;
+            height: 480px;
+            width: 320px;
+            object-fit: cover;
+            z-index: 2;
+        }
+
+        .center-image {
+            position: relative;
+            width: 320px;
+            height: 105px;
+            object-fit: contain;
+            z-index: 1;
+            margin: 0 -10%;
+        }
+
+        .right-image {
+            position: absolute;
+            bottom: 150px;
+            right: -120px;
+            height: 600px;
+            width: 770px;
+            object-fit: cover;
+            z-index: 2;
+        }
+
+        .steps-text {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            text-align: center;
+            z-index: 3;
+            width: 600px;
+            padding: 0 20px;
+
+            h2 {
+                font-size: 40px;
+                color: #F4C22F;
+                line-height: 52px;
+                margin-bottom: 24px;
+                font-weight: 400;
+                text-align: center;
+            }
+
+            p {
+                color: #676767;
+                font-size: 18px;
+                line-height: 27px;
+                margin-bottom: 32px;
+                text-align: center;
+            }
+
+            .learn-more {
+                display: inline-flex;
+                align-items: center;
+                color: #F8B830;
+                text-decoration: none;
+                font-weight: 500;
+                font-size: 16px;
+                
+                &::after {
+                    content: '>';
+                    margin-left: 8px;
+                }
+            }
+        }
+    }
+} 
