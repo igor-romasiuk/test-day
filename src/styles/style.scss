@@ -1,0 +1,23 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Dupla', sans-serif;
+}
+
+.container {
+    padding: 0 120px;
+}
+
+// Import component styles
+@import 'header';
+@import 'hero-slider';
+@import 'products-grid';
+@import 'recipes';
+@import 'steps';
+@import 'blog-section';
+@import 'social-contact';
+@import 'footer';
